@@ -1,19 +1,5 @@
 /* JS Document */
 
-/******************************
-
-[Table of Contents]
-
-1. Vars and Inits
-2. Set Header
-3. Init Menu
-4. Init Home Slider
-5. Init Featured Album Player
-6. InitMagic
-7. Init Single Player
-
-
-******************************/
 
 $(document).ready(function()
 {
@@ -30,9 +16,7 @@ $(document).ready(function()
 
 	initMenu();
 	initHomeSlider();
-	initAlbumPlayer();
 	initMagic();
-	initSinglePlayer();
 
 	setHeader();
 
@@ -120,126 +104,7 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
 
-	5. Init Featured Album Player
-
-	*/
-
-	function initAlbumPlayer()
-	{
-		if($('#jplayer_1').length)
-		{
-			// Duration has to be entered manually
-			var playlist = 
-			[
-				{
-					title:"Workshop 1",
-					artist:"Bensound",
-					mp3:"files/bensound-betterdays.mp3",
-					duration:"2.33"
-				},
-				{
-					title:"Workshop2",
-					artist:"Bensound",
-					mp3:"files/bensound-dubstep.mp3",
-					duration:"2.04"
-				},
-				{
-					title:"Workshop3",
-					artist:"Bensound",
-					mp3:"files/bensound-sunny.mp3",
-					duration:"2.20"
-				},
-				{
-					title:"Workshop4",
-					artist:"Bensound",
-					mp3:"files/bensound-betterdays.mp3",
-					duration:"2.33"
-				},
-				{
-					title:"Workshop5",
-					artist:"Bensound",
-					mp3:"files/bensound-dubstep.mp3",
-					duration:"2.04"
-				}
-			];
-
-			var options =
-			{
-				playlistOptions:
-				{
-					autoPlay:false,
-					enableRemoveControls:false
-				},
-				play: function() // To avoid multiple jPlayers playing together.
-				{ 
-					$(this).jPlayer("pauseOthers");
-				},
-				solution: 'html',
-				supplied: 'oga, mp3',
-				useStateClassSkin: true,
-				preload: 'metadata',
-				volume: 0.2,
-				muted: false,
-				backgroundColor: '#000000',
-				cssSelectorAncestor: '#jp_container_1',
-				errorAlerts: false,
-				warningAlerts: false
-			};
-
-			var cssSel = 
-			{
-				jPlayer: "#jplayer_1",
-				cssSelectorAncestor: "#jp_container_1",
-				play: '.jp-play',
-				pause: '.jp-pause',
-				stop: '.jp-stop',
-				seekBar: '.jp-seek-bar',
-				playBar: '.jp-play-bar',
-				globalVolume: true,
-				mute: '.jp-mute',
-				unmute: '.jp-unmute',
-				volumeBar: '.jp-volume-bar',
-				volumeBarValue: '.jp-volume-bar-value',
-				volumeMax: '.jp-volume-max',
-				playbackRateBar: '.jp-playback-rate-bar',
-				playbackRateBarValue: '.jp-playback-rate-bar-value',
-				currentTime: '.jp-current-time',
-				duration: '.jp-duration',
-				title: '.jp-title',
-				fullScreen: '.jp-full-screen',
-				restoreScreen: '.jp-restore-screen',
-				repeat: '.jp-repeat',
-				repeatOff: '.jp-repeat-off',
-				gui: '.jp-gui',
-				noSolution: '.jp-no-solution'
-			};
-
-			var myPlaylist = new jPlayerPlaylist(cssSel,playlist,options);
-			
-			
-			setTimeout(function()
-			{
-				var items = $('.jp-playlist ul li > div');
-				for(var x = 0; x < items.length; x++)
-				{
-					var item = items[x];
-					var dur = playlist[x].duration;
-					var durationDiv = document.createElement('div');
-					durationDiv.className = "song_duration";
-					durationDiv.append(dur);
-					item.append(durationDiv);
-				}
-			},200);
-		}
-	}
-
-	/* 
-
-	6. Init Magic
-
-	*/
 
 	function initMagic()
 	{
@@ -263,45 +128,55 @@ $(document).ready(function()
 		}
 	}
 
-	/* 
+	/*
+	Workshop box
+	 */
 
-	7. Init Single Player
+    $('.workshop_btn').click(function(e) {
+        var imageurl;
+        var workshop_number;
+        var workshop_title;
+        var workshop_desc;
+        var workshop_title_selector=$('.workshop_box_title>h1');
+        var workshop_text_selector=$(".workshop_box_text>p");
+    	workshop_number=$(this).parent().attr("workshop_no");
+        imageurl="url('images/workshop_box_"+ workshop_number +".jpg')";
+        $('.workshop_box').css("background-image",imageurl);
 
-	*/
 
-	function initSinglePlayer()
-	{
-		if($("#jplayer_2").length)
-		{
-			$("#jplayer_2").jPlayer({
-		ready: function () {
-			$(this).jPlayer("setMedia", {
-				title:"Better Days",
-					artist:"Bensound",
-					mp3:"files/bensound-betterdays.mp3"
-			});
-		},
-		play: function() { // To avoid multiple jPlayers playing together.
-			$(this).jPlayer("pauseOthers");
-		},
-		swfPath: "plugins/jPlayer",
-		supplied: "mp3",
-		cssSelectorAncestor: "#jp_container_2",
-		wmode: "window",
-		globalVolume: true,
-		useStateClassSkin: true,
-		autoBlur: false,
-		smoothPlayBar: true,
-		keyEnabled: true,
-		solution: 'html',
-		preload: 'metadata',
-		volume: 0.2,
-		muted: false,
-		backgroundColor: '#000000',
-		errorAlerts: false,
-		warningAlerts: false
-	});
-		}	
-	}
+
+    	switch(workshop_number){
+
+			case "1":
+				workshop_title="Workshop 1";
+				workshop_desc="Workshop1 desc";
+				break;
+            case "2":
+                workshop_title="Workshop 2";
+                workshop_desc="Workshop1 desc";
+                break;
+            case "3":
+                workshop_title="Workshop 3";
+                workshop_desc="Workshop1 desc";
+                break;
+
+			default:
+				workshop_title="--Unknown workshop--";
+				workshop_desc="--no description--";
+
+		}
+
+
+
+		workshop_title_selector.html(workshop_title);
+    	workshop_text_selector.html(workshop_desc);
+        $('#wbox_1').lightbox_me({
+            centered: true,
+
+            overlayCSS: {background: 'black',
+                opacity: .9}
+        });
+        e.preventDefault();
+    });
 
 });
