@@ -1,0 +1,107 @@
+.gKRKSdkq_0 {
+    stroke-dasharray: 51 53;
+    stroke-dashoffset: 52;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_1 {
+    stroke-dasharray: 51 53;
+    stroke-dashoffset: 52;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_2 {
+    stroke-dasharray: 397 399;
+    stroke-dashoffset: 398;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_3 {
+    stroke-dasharray: 404 406;
+    stroke-dashoffset: 405;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_4 {
+    stroke-dasharray: 404 406;
+    stroke-dashoffset: 405;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_5 {
+    stroke-dasharray: 404 406;
+    stroke-dashoffset: 405;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_6 {
+    stroke-dasharray: 285 287;
+    stroke-dashoffset: 286;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_7 {
+    stroke-dasharray: 249 251;
+    stroke-dashoffset: 250;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_8 {
+    stroke-dasharray: 456 458;
+    stroke-dashoffset: 457;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_9 {
+    stroke-dasharray: 452 454;
+    stroke-dashoffset: 453;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_10 {
+    stroke-dasharray: 251 253;
+    stroke-dashoffset: 252;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_11 {
+    stroke-dasharray: 285 287;
+    stroke-dashoffset: 286;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_12 {
+    stroke-dasharray: 80 82;
+    stroke-dashoffset: 81;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_13 {
+    stroke-dasharray: 159 161;
+    stroke-dashoffset: 160;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+.gKRKSdkq_14 {
+    stroke-dasharray: 467 469;
+    stroke-dashoffset: 468;
+    animation: gKRKSdkq_draw 2000ms ease-out 0ms forwards;
+}
+
+@keyframes gKRKSdkq_draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes gKRKSdkq_fade {
+    0% {
+        stroke-opacity: 1;
+    }
+    93.54838709677419% {
+        stroke-opacity: 1;
+    }
+    100% {
+        stroke-opacity: 0;
+    }
+}
