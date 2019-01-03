@@ -1,6 +1,32 @@
 /* JS Document */
 
+window.onload = function() {
+    // Month Day, Year Hour:Minute:Second, id-of-element-container
+    countDownToTime("Feb 9, 2019 15:00:00", 'countdown_atreya');
+};
+function countDownToTime(countTo, id) {
+    countTo = new Date(countTo).getTime();
+    var now = new Date(),
+        countTo = new Date(countTo),
+        timeDifference = (countTo - now);
 
+    var secondsInADay = 60 * 60 * 1000 * 24,
+        secondsInAHour = 60 * 60 * 1000;
+
+    days = Math.floor(timeDifference / (secondsInADay) * 1);
+    hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+    mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+    secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+    var idEl = document.getElementById(id);
+    idEl.getElementsByClassName('days')[0].innerHTML = days;
+    idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+    idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+    idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+    clearTimeout(countDownToTime.interval);
+    countDownToTime.interval = setTimeout(function(){ countDownToTime(countTo, id); },1000);
+}
 $(document).ready(function()
 {
 	"use strict";
@@ -133,6 +159,7 @@ $(document).ready(function()
 	 */
 
     $('.workshop_btn').click(function(e) {
+        $('body').css('overflow','hidden');
         var imageurl;
         var workshop_number;
         var workshop_title;
@@ -172,9 +199,8 @@ $(document).ready(function()
     	workshop_text_selector.html(workshop_desc);
         $('#wbox_1').lightbox_me({
             centered: true,
-
-            overlayCSS: {background: 'black',
-                opacity: .9}
+            onClose: function() {$('body').css('overflow','visible');},
+            overlayCSS: {background: 'black', opacity: .9}
         });
         e.preventDefault();
     });

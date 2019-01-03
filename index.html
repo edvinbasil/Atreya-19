@@ -4,6 +4,7 @@
 <title>Atreya '19</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -13,8 +14,7 @@
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
 <body>
-<div id="preloader" style="left: 0; top: 0; width: 100%; height: 100%; position: fixed; z-index: 999; overflow: visible; background: #000 url('images/loader.svg') no-repeat center center;">
-</div>
+<div id="preloader" style="left: 0; top: 0; width: 100%; height: 100%; position: fixed; z-index: 999; overflow: visible; background: #000 url('images/loader.svg') no-repeat center center;"></div>
 <div class="hidden">
 	<script type="text/javascript">
         <!--//--><![CDATA[//><!--
@@ -26,7 +26,7 @@
             }
         }
         preload(
-            "https://atreya-mardbxjczq.now.sh/images/index.jpg"
+            "images/index.jpg"
         )
         //--><!]]>
 	</script>
@@ -39,15 +39,15 @@
 			<div class="logo"><a href="#">Atreya '19</a></div>
 			<div class="log_reg">
 				<ul class="d-flex flex-row align-items-start justify-content-start">
-					<li><a href="#">Get Tickets</a></li>
+					<li style="border: solid #fff 2px; border-radius: 30px; padding: 5px 15px;"><a href="#">Get Tickets</a></li>
 				</ul>
 			</div>
 			<nav class="main_nav">
 				<ul class="d-flex flex-row align-items-start justify-content-start">
 					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="workshops.html">Workshops</a></li>
-					<li><a href="#">Lectures</a></li>
 					<li><a href="events.html">Events</a></li>
+					<li><a href="lectures.html">Lectures</a></li>
+					<li><a href="workshops.html">Workshops</a></li>
 					<li><a href="#">About Us</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
@@ -76,9 +76,9 @@
 				<nav class="menu_nav">
 					<ul class="d-flex flex-column align-items-start justify-content-start">
 						<li><a href="index.html">Home</a></li>
-						<li><a href="workshops.html">Workshops</a></li>
-						<li><a href="#">Lectures</a></li>
 						<li><a href="events.html">Events</a></li>
+						<li><a href="lectures.html">Lectures</a></li>
+						<li><a href="workshops.html">Workshops</a></li>
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Contact</a></li>
 					</ul>
@@ -89,6 +89,11 @@
 
 	<!-- Home -->
 
+
+
+
+
+
 	<div class="home">
 		<div class="home_slider_container">
 			
@@ -97,33 +102,44 @@
 				
 				<!-- Slide -->
 				<div class="owl-item">
-					<div class="background_image" style="background-image:url('https://atreya-mardbxjczq.now.sh/images/index.jpg')"></div>
+					<div class="background_image" style="background-image:url('images/index.jpg')"></div>
 					<div class="home_container">
 						<div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
 							<div class="home_content text-center">
 
-								<div class="home_subtitle">ISTE State Convention</div>
+								<div class="home_subtitle" style="font-size: 25px">Indian Society for Technical Education</div>
+								<div class="home_subtitle">National Institute of Technology, Calicut</div>
+								<div class="home_subtitle">17th Annual State Convention</div>
 								<div class="home_title">
 
 								</div>
 								<div class="home_link"><a href="#">9-10 February 2019</a></div>
+
+							</div>
+							<div class="logo_box">
+								<img style="width: 100px" src="images/iste.svg" alt="">
+								<img style="width: 100px" src="images/nitc.svg" alt="">
+
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
-
-
+<!--<div style="display: flex; justify-content: center;">-->
+	<!--<div id="3d" style="width: 500px; height: 500px"></div>-->
+<!--</div>-->
 
 	<div class="lectures">
 		<div class="container">
 			<div class="row" style="z-index:10;">
 				<div class="col">
 					<div class="section_title_container">
-						<div class="section_title"><h1>Workshops</h1></div>
+						<div class="workshop_subtitle">Events</div>
+						<div class="workshop_title"><h1>Workshops</h1></div>
 					</div>
 				</div>
 			</div>
@@ -153,6 +169,27 @@
 							</li>
 
 							<!-- Show -->
+							<li class="d-flex flex-row align-items-center justify-content-start" workshop_no="3">
+								<div><div class="show_date">10/02</div><div class="show_date">4PM</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Workshop 3</a></div>
+								</div>
+								<div class="ml-auto workshop_btn"><div class="show_shop trans_200"><a href="">More Info</a></div></div>
+							</li>
+							<li class="d-flex flex-row align-items-center justify-content-start" workshop_no="3">
+								<div><div class="show_date">10/02</div><div class="show_date">4PM</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Workshop 3</a></div>
+								</div>
+								<div class="ml-auto workshop_btn"><div class="show_shop trans_200"><a href="">More Info</a></div></div>
+							</li>
+							<li class="d-flex flex-row align-items-center justify-content-start" workshop_no="3">
+								<div><div class="show_date">10/02</div><div class="show_date">4PM</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Workshop 3</a></div>
+								</div>
+								<div class="ml-auto workshop_btn"><div class="show_shop trans_200"><a href="">More Info</a></div></div>
+							</li>
 							<li class="d-flex flex-row align-items-center justify-content-start" workshop_no="3">
 								<div><div class="show_date">10/02</div><div class="show_date">4PM</div></div>
 								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
@@ -242,6 +279,30 @@
 								</div>
 								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">More Info</a></div></div>
 							</li>
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">10/02</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Lecture 3</a></div>
+									<div class="show_location">Lecturer 3</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">More Info</a></div></div>
+							</li>
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">10/02</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Lecture 3</a></div>
+									<div class="show_location">Lecturer 3</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">More Info</a></div></div>
+							</li>
+							<li class="d-flex flex-row align-items-center justify-content-start">
+								<div><div class="show_date">10/02</div></div>
+								<div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
+									<div class="show_name"><a href="#">Lecture 3</a></div>
+									<div class="show_location">Lecturer 3</div>
+								</div>
+								<div class="ml-auto"><div class="show_shop trans_200"><a href="#">More Info</a></div></div>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -257,7 +318,28 @@
 		</div>
 	</div>
 
+	<div class="countdown">
+		<div id="count_title">Atreya begins in...</div>
+		<div class="countdown_container" id="countdown_atreya">
+			<div class="count_dial">
+				<span class="timeel days">00</span>
+				<span class="timeel timeRefDays">Days</span>
+			</div><div class="count_dot"></div>
+			<div class="count_dial">
+				<span class="timeel hours">00</span>
+				<span class="timeel timeRefHours">Hours</span>
+			</div><div class="count_dot"></div>
+			<div class="count_dial">
+				<span class="timeel minutes">00</span>
+				<span class="timeel timeRefMinutes">Minutes</span>
+			</div><div class="count_dot"></div>
+			<div class="count_dial">
+				<span class="timeel seconds">00</span>
+				<span class="timeel timeRefSeconds">Seconds</span>
+			</div>
+		</div>
 
+	</div>
 
 
 
@@ -331,6 +413,145 @@
 	</footer>
 </div>
 
+<script src="js/three/build/three.js"></script>
+
+<script src="js/three/ColladaLoader.js"></script>
+<script src="js/three/WebGL.js"></script>
+<script src="js/three/stats.min.js"></script>
+<script src="js/three/OrbitControls.js"></script>
+<script src="js/three/TrackballControls.js"></script>
+
+
+<!--3D Atreya Testing-->
+
+<!--<script>-->
+
+    <!--if ( WEBGL.isWebGLAvailable() === false ) {-->
+
+        <!--document.body.appendChild( WEBGL.getWebGLErrorMessage() );-->
+
+    <!--}-->
+
+    <!--var container, stats, clock;-->
+    <!--var camera, scene, renderer, elf;-->
+
+    <!--init();-->
+    <!--animate();-->
+
+    <!--function init() {-->
+
+        <!--container = document.getElementById( '3d' );-->
+
+
+
+        <!--camera = new THREE.PerspectiveCamera( 45, (window.innerWidth) / (window.innerHeight), 0.1, 2000 );-->
+        <!--camera.position.set( 8, 10, 8 );-->
+        <!--camera.lookAt( 0, 3, 0 );-->
+
+
+
+        <!--scene = new THREE.Scene();-->
+        <!--scene.background = new THREE.Color( 0x000000 );-->
+
+        <!--clock = new THREE.Clock();-->
+
+        <!--// loading manager-->
+
+        <!--var loadingManager = new THREE.LoadingManager( function () {-->
+
+            <!--scene.add( elf );-->
+
+        <!--} );-->
+
+        <!--// collada-->
+
+        <!--var loader = new THREE.ColladaLoader( loadingManager );-->
+        <!--loader.load( 'js/three/models/elf.dae', function ( collada ) {-->
+
+            <!--elf = collada.scene;-->
+
+        <!--} );-->
+
+        <!--//-->
+
+        <!--var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.5 );-->
+        <!--scene.add( ambientLight );-->
+
+        <!--var directionalLight = new THREE.DirectionalLight( 0x8d2d2d, 8 );-->
+        <!--directionalLight.position.set( 1, 1, 0 ).normalize();-->
+        <!--scene.add( directionalLight );-->
+
+        <!--//-->
+
+
+        <!--renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });-->
+       <!--// renderer.setSize(targetWidth, targetHeight );-->
+        <!--renderer.setClearColor(0xededed, 0)-->
+
+
+
+        <!--renderer.setPixelRatio( window.devicePixelRatio );-->
+        <!--renderer.setSize( 500,500 );-->
+        <!--container.appendChild( renderer.domElement );-->
+
+        <!--//-->
+
+        <!--controls = new THREE.OrbitControls( camera, container );-->
+        <!--// // controls.minDistance = 30;-->
+        <!--// // controls.maxDistance = 50;-->
+		<!--// controls.minPolarAngle = 0.1;-->
+		<!--// controls.enableZoom = false;-->
+
+
+
+        <!--// controls = new THREE.DeviceOrientationControls( camera );-->
+
+        <!--// stats = new Stats();-->
+        <!--// container.appendChild( stats.dom );-->
+
+        <!--//-->
+
+        <!--window.addEventListener( 'resize', onWindowResize, false );-->
+
+
+    <!--}-->
+
+
+
+    <!--function onWindowResize() {-->
+
+        <!--camera.aspect = window.innerWidth / window.innerHeight;-->
+        <!--camera.updateProjectionMatrix();-->
+
+        <!--renderer.setSize( window.innerWidth, window.innerHeight );-->
+
+    <!--}-->
+
+    <!--function animate() {-->
+
+        <!--requestAnimationFrame( animate );-->
+
+        <!--render();-->
+        <!--// stats.update();-->
+
+    <!--}-->
+
+    <!--function render() {-->
+
+        <!--var delta = clock.getDelta();-->
+
+        <!--if ( elf !== undefined ) {-->
+
+            <!--elf.rotation.z += delta * 0.5;-->
+
+        <!--}-->
+
+        <!--renderer.render( scene, camera );-->
+
+    <!--}-->
+
+<!--</script>-->
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
 <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
@@ -346,15 +567,13 @@
 <script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
 <script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
 <script src="plugins/lightboxme/jquery.lightbox_me.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
-    $(document).ready( function() {
-        setTimeout(function(){
-            $('#preloader').fadeOut();
-            $('.home_title').append('<img src="images/main_logo.svg">');
-        }, 3000);
-    });
+    $(window).on("load", function() {
+        $('#preloader').fadeOut();
+        $('.home_title').append("<img style='height: 300px' src='images/main_logo.svg'>");
+	});
 </script>
 </body>
 </html>

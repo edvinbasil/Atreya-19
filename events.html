@@ -4,12 +4,14 @@
     <title>Events</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/events.css">
     <link rel="stylesheet" type="text/css" href="styles/events_responsive.css">
 </head>
 <body>
+<div id="preloader" style="left: 0; top: 0; width: 100%; height: 100%; position: fixed; z-index: 999; overflow: visible; background: #000 url('images/loader.svg') no-repeat center center;"></div>
 
 <div class="super_container">
 
@@ -25,9 +27,9 @@
             <nav class="main_nav">
                 <ul class="d-flex flex-row align-items-start justify-content-start">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="workshops.html">Workshops</a></li>
-                    <li><a href="#">Lectures</a></li>
                     <li class="active"><a href="events.html">Events</a></li>
+                    <li><a href="lectures.html">Lectures</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -56,9 +58,9 @@
                 <nav class="menu_nav">
                     <ul class="d-flex flex-column align-items-start justify-content-start">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="workshops.html">Workshops</a></li>
-                        <li><a href="#">Lectures</a></li>
                         <li><a href="events.html">Events</a></li>
+                        <li><a href="lectures.html">Lectures</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
@@ -68,7 +70,6 @@
     </div>
     <div class="events_header"><div class="events_heading">Events</div></div>
     <div class="events_container">
-
         <div class="event">
             <div class="event_inner">
                 <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/event1.jpg" data-speed="0.8"></div>
@@ -190,5 +191,10 @@
 <script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
 <script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
 <script src="js/workshops.js"></script>
+<script>
+    $(window).on("load", function() {
+        $('#preloader').fadeOut();
+    });
+</script>
 </body>
 </html>
