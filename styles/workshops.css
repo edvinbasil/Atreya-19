@@ -631,7 +631,8 @@ section
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
-	background: rgba(222,79,50,0.7);
+	background: #9a4141;
+	opacity: 0.7;
 	width: 200%;
 	height: 200%;
 	z-index: 1;
@@ -641,6 +642,9 @@ section
 	-ms-transition: all 600ms ease;
 	-o-transition: all 600ms ease;
 	transition: all 600ms ease;
+}
+.disc_sold a::before{
+	background: url('../images/sold_out.png');
 }
 .disc:hover a::before
 {
@@ -681,7 +685,7 @@ section
 }
 .disc_content_1 .disc_title
 {
-	font-size: 36px;
+	font-size: 20px;
 	color: #FFFFFF;
 }
 .disc_content_1 .disc_subtitle
@@ -701,7 +705,7 @@ section
 	-o-transform: translateX(-50%);
 	transform: translateX(-50%);
 	bottom: 27px;
-	width: 246px;
+	width: 90%;
 	/*height: 149px;*/
 	padding-top: 39px;
 	padding-bottom: 45px;
@@ -709,13 +713,15 @@ section
 }
 .disc_content_2 .disc_title
 {
+	padding: 0px 10px;
 	font-family: 'Futura_Bold', sans-serif;
-	font-size: 36px;
+	font-size: 20px;
 	color: #FFFFFF;
 	line-height: 1.2;
 }
 .disc_content_2 .disc_subtitle
 {
+	padding: 0px 10px;
 	font-size: 12px;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;

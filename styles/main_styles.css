@@ -591,6 +591,7 @@ section {
 }
 
 .home_subtitle {
+    opacity: 0;
     font-size: 20px;
     color: #FFF
 }
@@ -835,10 +836,23 @@ section {
     display: none;
     padding: 50px 10px;
 }
+.workshop_box_title>h1{
+    font-size: 34px;
+}
+.workshop_box_title>h1>span{
+    font-size: 0.5em;
+}
 
 .workshop_box_text
 {
-    margin-top: 39px;
+    margin-top: 10px;
+}
+.workshop_box_text>p{
+
+}
+.workshop_box_text>p>span{
+    display: block;
+    font-size: 1.5em;
 }
 .artist_text p:not(:last-child)
 {

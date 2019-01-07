@@ -1,0 +1,169 @@
+<!doctype html>
+<html>
+<head>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/Turn/turn.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+    <style type="text/css">
+        body{
+            background:#000;
+        }
+        .pdf_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #magazine{
+            width: 80vw;
+            height: 80vh;
+        }
+        #magazine .turn-page{
+            background-color:#000;
+            background-size:100% 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="super_container">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header_content d-flex flex-row align-items-center justify-content-center">
+            <div class="logo"><a href="#">Atreya '19</a></div>
+            <div class="log_reg">
+                <ul class="d-flex flex-row align-items-start justify-content-start">
+                    <li style="border: solid #fff 2px; border-radius: 30px; padding: 5px 15px;"><a href="#">Get Tickets</a></li>
+                </ul>
+            </div>
+            <nav class="main_nav">
+                <ul class="d-flex flex-row align-items-start justify-content-start">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="lectures.html">Lectures</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="hospitality.html">Hospitality</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger ml-auto">
+                <div class="d-flex flex-column align-items-end justify-content-between">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+
+    <div class="menu">
+        <div>
+            <div class="menu_overlay"></div>
+            <div class="menu_container d-flex flex-column align-items-start justify-content-center">
+                <div class="menu_log_reg">
+                    <ul class="d-flex flex-row align-items-start justify-content-start">
+                        <li><a href="#">Get Tickets</a></li>
+                    </ul>
+                </div>
+                <nav class="menu_nav">
+                    <ul class="d-flex flex-column align-items-start justify-content-start">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="lectures.html">Lectures</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="hospitality.html">Hospitality</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+<div class="pdf_container">
+    <div id="magazine">
+        <div style="background-image:url(images/brochure/01.jpg);"></div>
+        <div style="background-image:url(images/brochure/02.jpg);"></div>
+        <div style="background-image:url(images/brochure/03.jpg);"></div>
+        <div style="background-image:url(images/brochure/04.jpg);"></div>
+        <div style="background-image:url(images/brochure/05.jpg);"></div>
+        <div style="background-image:url(images/brochure/06.jpg);"></div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
+        <div class="newsletter_container">
+            <div class="newsletter_title"><h2>Subscribe to upcoming events</h2></div>
+            <form action="#" id="newsletter_form" class="newsletter_form">
+                <input type="email" class="newsletter_input" placeholder="Your E-mail" required="required">
+                <button class="newsletter_button">Subscribe</button>
+            </form>
+        </div>
+        <div class="footer_lists d-flex flex-sm-row  flex-column align-items-start justify-content-start ml-xl-auto">
+
+
+            <div class="footer_list">
+                <div class="footer_list_title">Useful Links</div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="#">Lectures</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer_list">
+                <div class="footer_list_title">Atreya Sites</div>
+                <ul>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">CA</a></li>
+                </ul>
+            </div>
+
+            <div class="footer_list">
+                <div class="footer_list_title">Connect with us</div>
+                <ul>
+                    <li><a href="https://www.instagram.com/atreya19/">Instagram</a></li>
+                    <li><a href="https://facebook.com/istenitc/">Facebook</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottom_bar">
+
+    </div>
+</footer></div>
+
+<script type="text/javascript">
+    $(window).ready(function() {
+        $('#magazine').turn({
+            display: 'single',
+            acceleration: true,
+            gradients: !$.isTouch,
+            elevation:50,
+            when: {
+                turned: function(e, page) {
+                    /*console.log('Current view: ', $(this).turn('view'));*/
+                }
+            }
+        });
+    });
+
+
+    $(window).bind('keydown', function(e){
+
+        if (e.keyCode==37)
+            $('#magazine').turn('previous');
+        else if (e.keyCode==39)
+            $('#magazine').turn('next');
+
+    });
+</script>
+
+</body>
+</html>
