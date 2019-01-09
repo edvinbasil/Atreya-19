@@ -109,6 +109,7 @@
     }
 
     .lectures_list_col {
+        padding: 0px;
         position: absolute;
         top: 50%;
         left: 0;
@@ -270,11 +271,12 @@
     }
 
     .show_date {
+        margin-right: 5px;
         width: 68px
     }
 
     .show_shop {
-        width: 100px
+        width: 80px
     }
     .lectures_list li a {
         font-size: 12px;
@@ -346,5 +348,14 @@
     .countdown span[class*="timeRef"] {
     font-size: 10px;
     padding: 5px 10px 0px 10px ;
+    }
+    .show_info {
+        padding-right: 5px;
+    }
+    .lectures_list li{
+        padding-left: 5px;
+    }
+    p{
+        line-height: 1.3;
     }
 }
