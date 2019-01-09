@@ -11,6 +11,12 @@
 }
 
 @media only screen and (max-width: 1199px) {
+    .show_name{
+        width: 80%;
+    }
+    .lectures_list li {
+        font-size: 16px;
+    }
     .footer_lists, .newsletter_container {
         width: 667px
     }
@@ -49,6 +55,7 @@
 }
 
 @media only screen and (max-width: 991px) {
+
     .main_nav {
         display: none
     }
@@ -357,5 +364,11 @@
     }
     p{
         line-height: 1.3;
+    }
+    .workshop_box_title>h1{
+        font-size: 25px;
+    }
+    .workshop_box_text>p>span{
+        font-size: 1.3em;
     }
 }
