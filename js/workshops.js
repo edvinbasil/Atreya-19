@@ -113,5 +113,19 @@ $(document).ready(function()
 	    	});
 		}
 	}
+    $(".event").css("display","none");
+    // $(window).trigger('resize').trigger('scroll');
+    $(".parallax_background").toggle();
+
+
+
+	$('.event_category').click(function () {
+			console.log($(this).find('.parallax_background').css("display"));
+        $(this).find('.parallax_background').slideToggle();
+		$(this).find('.event').slideToggle();
+        $(window).trigger('resize').trigger('scroll');
+        $(this).children("span").toggleClass("fa-toggle-right");
+        $(this).children("span").toggleClass("fa-toggle-down");
+    })
 
 });

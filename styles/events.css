@@ -593,6 +593,9 @@ section
     padding-right: 52px;
     margin-bottom: 100px;
 }
+.event_hidden{
+    opacity: 0.1;
+}
 .event_inner
 {
     width: 100%;
@@ -650,6 +653,15 @@ section
     color: #FFF;
     font-size: 14px;
     text-align: center
+}
+.event_category{
+    font-size: 18px;
+}
+.event_category > span{
+    padding: 10px 0px;
+}
+.event_category > span:before{
+    padding-right: 10px;
 }
 
 

@@ -2,7 +2,7 @@
 
 window.onload = function() {
     // Month Day, Year Hour:Minute:Second, id-of-element-container
-    countDownToTime("Feb 9, 2019 15:00:00", 'countdown_atreya');
+    countDownToTime("Feb 9, 2019 09:00:00", 'countdown_atreya');
 };
 function countDownToTime(countTo, id) {
     countTo = new Date(countTo).getTime();
@@ -202,7 +202,7 @@ $(document).ready(function()
 		}
 
 
-		workshop_desc += "<span>Contact</span>JERIN JOHNNY: +91 73561 23886 <br>ARUN SEBASTIAN: +91 70257 74464 ";
+		workshop_desc += "<span>Contact</span>JERIN JOHNNY: +91 73561 23886 <br>ARUN SEBASTIAN: +91 70257 74464 <span style='margin-top: 30px;'><a style='border: solid 0px 0px 2px 0px; border-radius: 5px; padding: 4px 12px; align-self: center' href='https://www.yepdesk.com/atreya-events'>Register</a></span>";
 		workshop_title_selector.html(workshop_title);
     	workshop_text_selector.html(workshop_desc);
         $('#wbox_1').lightbox_me({
@@ -246,6 +246,11 @@ $(document).ready(function()
                 lecturer= "Dr. Rahul Kashyap, ICTS";
                 workshop_desc="IITian and currently a post doctoral fellow at icts, dr. Rahul kashyap is a very erudite person with vast knowledge and interest in the field of astrophysics and related maths. Having completed his ph.D from the university of massachusetts, he currently has two astrophysical journals and a certification under his name.";
                 break;
+            case "4":
+                workshop_title="Generative Adversarial Network (Gan) Applications And Theory";
+                lecturer= "Dr. Deepak Mishra";
+                workshop_desc="Dr. Deepak mishra, renowned for his brilliance in the field of neural networks and computer vision, is an iitian and is currently an associate professor at iist, trivandrum. Being a post doctoral fellow from the university of louisville, kentucky, he is a young scientist awardee from the system society of india. This versatile veteran has published research papers in journals of national and international repute.";
+                break;
 
             default:
                 workshop_title="--Unknown workshop--";
@@ -253,7 +258,7 @@ $(document).ready(function()
 
         }
         workshop_title = workshop_title + "<span><br>-- " + lecturer + "</span>"  ;
-        workshop_desc = "<span>About the lecturer</span>" + workshop_desc + "<span>Contact</span>KUNCHERIA JOSE: +91 70257 59120 <br> DIYA KAMNANI: +91 80868 33068";
+        workshop_desc = "<span>About the lecturer</span>" + workshop_desc + "<span>Contact</span>KUNCHERIA JOSE: +91 70257 59120 <br> DIYA KAMNANI: +91 80868 33068 <span style='margin-top: 30px;'><a style='border: solid 0px 0px 2px 0px; border-radius: 5px; padding: 4px 12px; align-self: center' href='https://www.yepdesk.com/atreya-events'>Register</a></span>";
 
 
         workshop_title_selector.html(workshop_title);

@@ -15,7 +15,7 @@
    version="1.1"
    id="svg4557"
    inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="drawing-1.svg">
+   sodipodi:docname="nitc.svg">
   <defs
      id="defs4551">
     <marker
@@ -162,18 +162,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.277044"
-     inkscape:cx="55.59496"
-     inkscape:cy="-44.86977"
+     inkscape:zoom="3.238125"
+     inkscape:cx="41.32723"
+     inkscape:cy="24.19555"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      scale-x="0.7"
      units="px"
-     inkscape:window-width="1362"
-     inkscape:window-height="746"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1332"
+     inkscape:window-height="716"
+     inkscape:window-x="15"
+     inkscape:window-y="15"
      inkscape:window-maximized="0" />
   <metadata
      id="metadata4554">
@@ -183,7 +183,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -194,7 +194,7 @@
      transform="translate(0,-189.3792)">
     <g
        id="g5558"
-       transform="matrix(0.0974626,0,0,0.0974626,3.607742,178.9568)"
+       transform="matrix(0.0929605,0,0,0.0929605,3.861574,179.044)"
        style="fill:#ffffff;stroke:none">
       <path
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.2469444"
