@@ -744,3 +744,23 @@ section
 	color: #6d6d6d;
 	line-height: 67px;
 }
+.log_reg ul li {
+	background-color: #FFF
+
+}
+.log_reg ul li:hover {
+	background-color: #000
+
+}
+.log_reg ul li:hover > a{
+	color: #FFF
+
+}
+.log_reg ul li a {
+	font-size: 15px;
+	color: #000
+}
+
+.log_reg ul li a:hover {
+	color: #FFF;
+}

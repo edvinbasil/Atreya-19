@@ -618,6 +618,21 @@ section
     font-size: 1.1rem;
     line-height: 1.1;
 }
+.event_subtitle > a{
+    color: #ffd1d5;
+}
+.participants{
+    color: #9fcdff;
+    font-style: oblique;
+    font-weight: bold;
+}
+.prize{
+    font-size: 1.4em;
+}
+.prize > span{
+    color: #beffb7;
+   font-weight: bolder;
+}
 .event_title
 {
     padding-top: 30px;
@@ -783,4 +798,24 @@ section
     width: 100%;
     height: 67px;
     background: #000000;
+}
+.log_reg ul li {
+    background-color: #FFF
+
+}
+.log_reg ul li:hover {
+    background-color: #000
+
+}
+.log_reg ul li:hover > a{
+    color: #FFF
+
+}
+.log_reg ul li a {
+    font-size: 15px;
+    color: #000
+}
+
+.log_reg ul li a:hover {
+    color: #FFF;
 }

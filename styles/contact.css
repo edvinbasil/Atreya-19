@@ -652,6 +652,7 @@ section
 	font-size: 36px;
 	color: #FFFFFF;
 	line-height: 1.2;
+	text-align: center;
 }
 .contact_form
 {
@@ -769,6 +770,9 @@ section
 .contact_info_list ul li > div > div:first-child{
 	color: #9a4141;
 	display: block;
+	font-size: 22px;
+	padding-bottom: 20px;
+	margin-top: 25px;
 }
 .social
 {
@@ -909,3 +913,49 @@ section
 	color: #6d6d6d;
 	line-height: 67px;
 }
+.log_reg ul li {
+	background-color: #FFF
+
+}
+.log_reg ul li:hover {
+	background-color: #000
+
+}
+.log_reg ul li:hover > a{
+	color: #FFF
+
+}
+.log_reg ul li a {
+	font-size: 15px;
+	color: #000
+}
+
+.log_reg ul li a:hover {
+	color: #FFF;
+}
+.contact_img{
+	width: 200px;
+	margin-bottom: 10px;
+}
+.people{
+	display: flex;
+	flex-wrap: wrap;
+}
+.person{
+	padding-right: 10px;
+}
+.person > div{
+	text-align: center;
+}
+.contact_flex{
+	display: flex;
+	justify-content: center;
+}
+.contact_info_list > ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact_info_list > ul > li > div{
+	margin: 0px 20px;
+}
+

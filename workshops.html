@@ -26,7 +26,7 @@
 			<div class="logo"><a href="workshops.html">Workshops</a></div>
 			<div class="log_reg">
 				<ul class="d-flex flex-row align-items-start justify-content-start">
-					<li><a href="https://www.yepdesk.com/atreya-events">Get Tickets</a></li>
+					<li style="border: solid #fff 2px; border-radius: 30px; padding: 5px 15px;"><a href="https://www.townscript.com/widget/atreya-19-340430">Get Tickets</a></li>
 				</ul>
 			</div>
 			<nav class="main_nav">
@@ -57,7 +57,7 @@
 			<div class="menu_container d-flex flex-column align-items-start justify-content-center">
 				<div class="menu_log_reg">
 					<ul class="d-flex flex-row align-items-start justify-content-start">
-						<li><a href="https://www.yepdesk.com/atreya-events">Get Tickets</a></li>
+						<li><a href="https://www.townscript.com/widget/atreya-19-340430">Get Tickets</a></li>
 					</ul>
 				</div>
 				<nav class="menu_nav">
@@ -86,6 +86,10 @@
 		</div>
 	</div>
 
+
+
+
+
 	<!-- Discs -->
 
 	<div class="discs">
@@ -93,9 +97,9 @@
 			<div class="row discs_row">
 
 
-				<div class="col-xl-4 col-md-6">
-					<div class="disc disc_sold">
-						<a href="https://www.yepdesk.com/atreya-events">
+				<div class="col-xl-4 col-md-6 ">
+					<div  workshop_no="1" class="disc disc_sold">
+						<a class=" workshop_btn">
 							<div class="disc_image"><img src="images/W_internal_combustion_engine.jpg"></div>
 							<div class="disc_container">
 								<div>
@@ -112,8 +116,8 @@
 				</div>
 
 				<div class="col-xl-4 col-md-6">
-					<div class="disc disc_sold">
-						<a href="https://www.yepdesk.com/atreya-events">
+					<div workshop_no="2" class="disc disc_sold">
+						<a class=" workshop_btn">
 							<div class="disc_image"><img src="images/W_AR.jpg"></div>
 							<div class="disc_container">
 								<div>
@@ -130,8 +134,8 @@
 				</div>
 
 				<div class="col-xl-4 col-md-6">
-					<div class="disc disc_sold">
-						<a href="https://www.yepdesk.com/atreya-events">
+					<div workshop_no="3" class="disc disc_sold">
+						<a class=" workshop_btn">
 							<div class="disc_image"><img src="images/W_cloud_computing.jpg"></div>
 							<div class="disc_container">
 								<div>
@@ -148,8 +152,8 @@
 				</div>
 
 				<div class="col-xl-4 col-md-6">
-					<div class="disc disc_sold">
-						<a href="https://www.yepdesk.com/atreya-events">
+					<div workshop_no="4" class="disc disc_sold">
+						<a class=" workshop_btn">
 							<div class="disc_image"><img src="images/W_bim.jpg"></div>
 							<div class="disc_container">
 								<div>
@@ -166,8 +170,8 @@
 				</div>
 
 				<div class="col-xl-4 col-md-6">
-					<div class="disc disc_sold">
-						<a href="https://www.yepdesk.com/atreya-events">
+					<div workshop_no="5" class="disc disc_sold">
+						<a class=" workshop_btn">
 							<div class="disc_image"><img src="images/W_python_neural.jpg"></div>
 							<div class="disc_container">
 								<div>
@@ -188,41 +192,27 @@
 	</div>
 
 
+	<div class="workshop_box col-lg-8" id="wbox_1">
+		<div class="container">
+			<div class="row">
 
-<!--Copied demo Code ... needs more testing -->
-
-	<div class="milestones">
-		<div class="milestones_container">
-			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="images/counter.jpg" data-speed="0.8"></div>
-			<div class="container">
-				<div class="row milestones_row">
-					
-					<!-- Counter 1 Tickets -->
-					<div class="col-xl-3 col-md-6 milestone_col">
-						<div class="milestone d-flex flex-row align-items-center justify-content-start">
-							<div class="milestone_icon"><img src="images/icon_1.svg" alt="https://www.flaticon.com/authors/smashicons"></div>
-							<div class="milestone_content">
-								<div class="milestone_counter" data-end-value="436">0</div>
-								<div class="milestone_text">Tickets Sold</div>
-							</div>
+				<!-- Artist Content -->
+				<div class="col-lg-7 offset-lg-5">
+					<div class="workshop_box_content">
+						<div class="section_title_container">
+							<div class="section_subtitle"></div>
+							<div class="workshop_box_title"><h1></h1></div>
+						</div>
+						<div class="workshop_box_text">
+							<p></p>
 						</div>
 					</div>
-
-					<!-- Counter 2 - Participants -->
-					<div class="col-xl-3 col-md-6 milestone_col">
-						<div class="milestone d-flex flex-row align-items-center justify-content-start">
-							<div class="milestone_icon"><img src="images/icon_2.svg"></div>
-							<div class="milestone_content">
-								<div class="milestone_counter" data-end-value="367">0</div>
-								<div class="milestone_text">Participants</div>
-							</div>
-						</div>
-					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
+
+
 
 	<!-- Footer -->
 
@@ -287,9 +277,9 @@
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/progressbar/progressbar.min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
-<script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
 <script src="js/workshops.js"></script>
+<script src="plugins/lightboxme/jquery.lightbox_me.js"></script>
+<script src="js/popup.js"></script>
 <script>
     $(window).on("load", function() {
         $('#preloader').fadeOut();

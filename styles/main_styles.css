@@ -800,18 +800,22 @@ section {
 }
 
 .tickets_text {
-    margin-top: 4px
+    margin-top: 4px;
 }
 
 .tickets_button {
     width: 161px;
     height: 46px;
     background: #000;
-    margin-top: 35px
+    margin-top: 35px;
+    margin-right: 10px;
 }
 
 .tickets_button:hover {
     background: rgba(0, 0, 0, .5)
+}
+.dual_tickets{
+    display: flex;
 }
 
 .tickets_button a {
@@ -854,6 +858,9 @@ section {
     display: block;
     font-size: 1.5em;
 }
+
+
+
 .artist_text p:not(:last-child)
 {
     margin-bottom: 30px;

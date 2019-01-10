@@ -957,3 +957,50 @@ section
 	height: 67px;
 	background: #000000;
 }
+.log_reg ul li {
+	background-color: #FFF
+
+}
+.log_reg ul li:hover {
+	background-color: #000
+
+}
+.log_reg ul li:hover > a{
+	color: #FFF
+
+}
+.log_reg ul li a {
+	font-size: 15px;
+	color: #000
+}
+
+.log_reg ul li a:hover {
+	color: #FFF;
+}
+
+.workshop_box
+{
+
+	background-image: url("../images/workshop_box_1.jpg");
+	background-size: cover;
+	display: none;
+	padding: 50px 10px;
+}
+.workshop_box_title>h1{
+	font-size: 34px;
+}
+.workshop_box_title>h1>span{
+	font-size: 0.5em;
+}
+
+.workshop_box_text
+{
+	margin-top: 10px;
+}
+.workshop_box_text>p{
+
+}
+.workshop_box_text>p>span{
+	display: block;
+	font-size: 1.5em;
+}

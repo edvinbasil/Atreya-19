@@ -40,7 +40,7 @@
 			<div class="logo"><a href="#">Atreya '19</a></div>
 			<div class="log_reg">
 				<ul class="d-flex flex-row align-items-start justify-content-start">
-					<li style="border: solid #fff 2px; border-radius: 30px; padding: 5px 15px;"><a href="https://www.yepdesk.com/atreya-events">Get Tickets</a></li>
+					<li style="border: solid #fff 2px; border-radius: 30px; padding: 5px 15px;"><a href="https://www.townscript.com/widget/atreya-19-340430">Get Tickets</a></li>
 				</ul>
 			</div>
 			<nav class="main_nav">
@@ -71,7 +71,7 @@
 			<div class="menu_container d-flex flex-column align-items-start justify-content-center">
 				<div class="menu_log_reg">
 					<ul class="d-flex flex-row align-items-start justify-content-start">
-						<li><a href="https://www.yepdesk.com/atreya-events">Get Tickets</a></li>
+						<li><a href="https://www.townscript.com/widget/atreya-19-340430">Get Tickets</a></li>
 					</ul>
 				</div>
 				<nav class="menu_nav">
@@ -139,7 +139,7 @@
 			<div class="row" style="z-index:10;">
 				<div class="col">
 					<div class="section_title_container">
-						<div class="workshop_subtitle">Events</div>
+						<!--<div class="workshop_subtitle">Events</div>-->
 						<div class="workshop_title"><h1>Workshops</h1></div>
 					</div>
 				</div>
@@ -336,7 +336,10 @@
 							<div class="tickets_text">
 								<p>Get your tickets before they are all sold out</p>
 							</div>
-							<div class="tickets_button"><a href="https://www.yepdesk.com/atreya-events">Get tickets</a></div>
+							<div class="dual_tickets">
+							<div class="tickets_button"><a  target="_blank" rel="noopener noreferrer" href="https://www.townscript.com/widget/atreya-19-340430">General Tickets</a></div>
+							<div class="tickets_button"><a  target="_blank" rel="noopener noreferrer" href="https://www.yepdesk.com/atreya-events">Event Tickets</a></div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -344,15 +347,13 @@
 		</div>
 	</div>
 
-	<!-- Footer -->
-
 	<footer class="footer">
 		<div class="footer_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
 			<div class="newsletter_container">
 				<div class="newsletter_title"><h2>Subscribe to upcoming events</h2></div>
-				<form action="#" id="newsletter_form" class="newsletter_form">
-					<input type="email" class="newsletter_input" placeholder="Your E-mail" required="required">
-					<button class="newsletter_button">Subscribe</button>
+				<form action="subscribe.php" method="post" id="newsletter_form" class="newsletter_form">
+					<input name="email" type="email" class="newsletter_input" placeholder="Your E-mail" required="required">
+					<button type="submit" class="newsletter_button">Subscribe</button>
 				</form>
 			</div>
 			<div class="footer_lists d-flex flex-sm-row  flex-column align-items-start justify-content-start ml-xl-auto">
@@ -395,144 +396,7 @@
 	</footer>
 </div>
 
-<script src="js/three/build/three.js"></script>
 
-<script src="js/three/ColladaLoader.js"></script>
-<script src="js/three/WebGL.js"></script>
-<script src="js/three/stats.min.js"></script>
-<script src="js/three/OrbitControls.js"></script>
-<script src="js/three/TrackballControls.js"></script>
-
-
-<!--3D Atreya Testing-->
-
-<!--<script>-->
-
-    <!--if ( WEBGL.isWebGLAvailable() === false ) {-->
-
-        <!--document.body.appendChild( WEBGL.getWebGLErrorMessage() );-->
-
-    <!--}-->
-
-    <!--var container, stats, clock;-->
-    <!--var camera, scene, renderer, elf;-->
-
-    <!--init();-->
-    <!--animate();-->
-
-    <!--function init() {-->
-
-        <!--container = document.getElementById( '3d' );-->
-
-
-
-        <!--camera = new THREE.PerspectiveCamera( 45, (window.innerWidth) / (window.innerHeight), 0.1, 2000 );-->
-        <!--camera.position.set( 8, 10, 8 );-->
-        <!--camera.lookAt( 0, 3, 0 );-->
-
-
-
-        <!--scene = new THREE.Scene();-->
-        <!--scene.background = new THREE.Color( 0x000000 );-->
-
-        <!--clock = new THREE.Clock();-->
-
-        <!--// loading manager-->
-
-        <!--var loadingManager = new THREE.LoadingManager( function () {-->
-
-            <!--scene.add( elf );-->
-
-        <!--} );-->
-
-        <!--// collada-->
-
-        <!--var loader = new THREE.ColladaLoader( loadingManager );-->
-        <!--loader.load( 'js/three/models/elf.dae', function ( collada ) {-->
-
-            <!--elf = collada.scene;-->
-
-        <!--} );-->
-
-        <!--//-->
-
-        <!--var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.5 );-->
-        <!--scene.add( ambientLight );-->
-
-        <!--var directionalLight = new THREE.DirectionalLight( 0x8d2d2d, 8 );-->
-        <!--directionalLight.position.set( 1, 1, 0 ).normalize();-->
-        <!--scene.add( directionalLight );-->
-
-        <!--//-->
-
-
-        <!--renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });-->
-       <!--// renderer.setSize(targetWidth, targetHeight );-->
-        <!--renderer.setClearColor(0xededed, 0)-->
-
-
-
-        <!--renderer.setPixelRatio( window.devicePixelRatio );-->
-        <!--renderer.setSize( 500,500 );-->
-        <!--container.appendChild( renderer.domElement );-->
-
-        <!--//-->
-
-        <!--controls = new THREE.OrbitControls( camera, container );-->
-        <!--// // controls.minDistance = 30;-->
-        <!--// // controls.maxDistance = 50;-->
-		<!--// controls.minPolarAngle = 0.1;-->
-		<!--// controls.enableZoom = false;-->
-
-
-
-        <!--// controls = new THREE.DeviceOrientationControls( camera );-->
-
-        <!--// stats = new Stats();-->
-        <!--// container.appendChild( stats.dom );-->
-
-        <!--//-->
-
-        <!--window.addEventListener( 'resize', onWindowResize, false );-->
-
-
-    <!--}-->
-
-
-
-    <!--function onWindowResize() {-->
-
-        <!--camera.aspect = window.innerWidth / window.innerHeight;-->
-        <!--camera.updateProjectionMatrix();-->
-
-        <!--renderer.setSize( window.innerWidth, window.innerHeight );-->
-
-    <!--}-->
-
-    <!--function animate() {-->
-
-        <!--requestAnimationFrame( animate );-->
-
-        <!--render();-->
-        <!--// stats.update();-->
-
-    <!--}-->
-
-    <!--function render() {-->
-
-        <!--var delta = clock.getDelta();-->
-
-        <!--if ( elf !== undefined ) {-->
-
-            <!--elf.rotation.z += delta * 0.5;-->
-
-        <!--}-->
-
-        <!--renderer.render( scene, camera );-->
-
-    <!--}-->
-
-<!--</script>-->
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
@@ -546,11 +410,9 @@
 <script src="plugins/easing/easing.js"></script>
 <script src="plugins/progressbar/progressbar.min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
-<script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
 <script src="plugins/lightboxme/jquery.lightbox_me.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/popup.js"></script>
 <script>
     $(window).on("load", function() {
         $('#preloader').fadeOut();
