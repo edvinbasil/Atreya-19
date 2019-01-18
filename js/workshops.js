@@ -117,6 +117,7 @@ $(document).ready(function()
     // $(window).trigger('resize').trigger('scroll');
     $('.event_category').find(".parallax_background").toggle();
 
+
     
 	$('.event_category').click(function () {
 

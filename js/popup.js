@@ -22,22 +22,31 @@ $('.workshop_btn').click(function(e) {
         case "1":
             workshop_title="Internal Combustion Engine";
             workshop_desc="Internal combustion engines or ic engines have had a great impact on humanity. These engines produce immense power in contrast to their size and weight. Today, these engines power almost all air and land vehicles. In this workshop, get firsthand experience on the working principles and designing of ic engines.";
+            makedesc();
             break;
         case "2":
             workshop_title="Augmented Reality";
             workshop_desc="Technology is now as agile as time. The discovery of google glasses is an example of why augmented reality is one of the current cutting edge technology. Enhancing one's current perception of reality, ar technology allows for a digitally manipulable, enhanced and interactive view of a user’s real world. Along with acting as a tool of amplifying digital information, it is a link connecting reality and virtuality of our environment. This workshop will enable participants to work with ar modules and build modules including overlaying text, video, 2d and 3d elements. Animation and interaction with elements by making responsive ars will be an amazing thing to learn from this workshop.";
+            makedesc();
             break;
         case "3":
             workshop_title="Cloud Computing";
             workshop_desc="In the past, computing tasks, such as word processing, were not possible without the installation of application software on the user's device. Users purchase licenses for each application from software vendors and obtain the right to install the application on ones device. This workshop on cloud computing differs from the classic client-server model by providing applications from a server that are executed and managed by a client's web browser, without an installed client version of the application required. Centralization gives cloud service providers complete control over the versions of the browser-based applications provided to clients, which removes the need for version upgrades or license management on individual client computing devices.";
+            makedesc();
             break;
         case "4":
             workshop_title="Building Information Modelling";
             workshop_desc="Bim(building information modelling) is the trending concept in civil engineering where we can generate and manage digital representations of physical and functional characteristics of structural elements. Bim model holds all the information about a structure. This model will have thousands of information stored in it related to the structure, right from the smallest nut and bolt, to the largest concrete column in the building. This interactive workshop accompanied with actual case studies introduces civil engineering students the techniques involved in acquiring the information about the structures by using bim models, and exposing them to the various roles of a bim engineer.";
+            makedesc();
             break;
         case "5":
             workshop_title="Neural Network Using Python";
             workshop_desc="Neural networks can be defined as a mathematical function that maps a given input to a desired output. The inner workings of a neural network is important to an aspiring data scientist. They can be intimidating for people new to machine learning. But not to worry, as this workshop will break down the working of a neural network and at the end, by using python, you will have your very own working flexible neural network.";
+            makedesc();
+            break;
+        case "6":
+            workshop_title="Industrial Automation";
+            workshop_desc="Nowadays the concepts taught in the class are far different from real industries. We are bridging the gap between the industry and textbook by giving you a practical knowledge on industrial machines, their mechanical working and electrical programming. In this workshop ,you will be taught and given hands on experience with RELAY LOGICS, CIRCUITS, PLC PROGRAMMING and INDUSTRIAL APPLICATION OF PNEUMATIC CONTROLS.<span>Contact</span>JERIN JOHNNY: +91 73561 23886 <br>KISHORE: +91 9490639975 <span style='margin-top: 30px;'><a style='border: solid 0px 0px 2px 0px; border-radius: 5px; padding: 4px 12px; align-self: center' href='https://www.yepdesk.com/embed/atreya-19'>Register</a></span>";
             break;
 
         default:
@@ -46,8 +55,10 @@ $('.workshop_btn').click(function(e) {
 
     }
 
-
+function makedesc(){
     workshop_desc += "<span>Contact</span>JERIN JOHNNY: +91 73561 23886 <br>ARUN SEBASTIAN: +91 70257 74464 <span style='margin-top: 30px;'><a style='border: solid 0px 0px 2px 0px; border-radius: 5px; padding: 4px 12px; align-self: center' href='https://www.townscript.com/widget/atreya-19-340430'>Register</a></span>";
+}
+
     workshop_title_selector.html(workshop_title);
     workshop_text_selector.html(workshop_desc);
     $('#wbox_1').lightbox_me({
@@ -97,6 +108,11 @@ $('.lecture_btn').click(function(e) {
             workshop_title="Generative Adversarial Network (Gan) Applications And Theory";
             lecturer= "Dr. Deepak Mishra";
             workshop_desc="Dr. Deepak mishra, renowned for his brilliance in the field of neural networks and computer vision, is an iitian and is currently an associate professor at iist, trivandrum. Being a post doctoral fellow from the university of louisville, kentucky, he is a young scientist awardee from the system society of india. This versatile veteran has published research papers in journals of national and international repute.";
+            break;
+        case "5":
+            workshop_title="Challenging the IAS Dream";
+            lecturer= "Dr. A U Prasad";
+            workshop_desc="Dr. A U Prasad, the South India head of ALS IAS, India's largest IAS coaching network, is a towering titan in the field of media with fourteen magnificent years of expertise . This erudite person was the General Manager Operations in person for a Multinational company operating from London, for seven glorious years.";
             break;
 
         default:

@@ -593,6 +593,30 @@ section
     padding-right: 52px;
     margin-bottom: 100px;
 }
+
+.event_trophy
+{
+    width: 100%;
+    height: 384px;
+    margin-bottom: 50px;
+}
+#trophy_title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#trophy_title > h1{
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+
+}
+.trophy_flex{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 .event_hidden{
     opacity: 0.1;
 }
@@ -617,6 +641,13 @@ section
     width: 80%;
     font-size: 1.1rem;
     line-height: 1.1;
+}
+.guidelines{
+
+}
+.guidelines > a{
+    border-bottom: dotted #ffe3e3;
+    color: #ffe3e3;
 }
 .event_subtitle > a{
     color: #ffd1d5;
@@ -653,7 +684,7 @@ section
     height: 46px;
     background: #000;
     /*border: 2px solid rgba(255,255,255, 0.8);*/
-    margin-top: 35px
+
 }
 
 .events_button:hover {
