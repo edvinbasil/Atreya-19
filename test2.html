@@ -7,9 +7,11 @@
     <meta name="theme-color" content="#000000"/>
     <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
     <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/contact.css">
     <link rel="stylesheet" type="text/css" href="styles/contact_responsive.css">
-
 </head>
 <body>
 <div id="preloader"
@@ -33,7 +35,7 @@
                     <li><a href="lectures.html">Lectures</a></li>
                     <li><a href="workshops.html">Workshops</a></li>
                     <li><a href="hospitality.html">Hospitality</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="hamburger ml-auto">
@@ -84,25 +86,25 @@
         </div>
     </div>
 
-    <style>
-        .brochure{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
-        .brochure object{
-            width: 50vw;
-            height:  calc(100vh - 80px);
-        }
-    </style>
+<style>
+    .brochure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+    }
+    .brochure object{
+        width: 50vw;
+        height: 500px;
+    }
+</style>
+
     <div class="brochure">
-        <object data='http://atreya.istenitc.org/guidelines/FRAMES.pdf#view=FitV'
-                type='application/pdf'
-                width='100%'
-                height='100%'>
-            <p>This browser does not support inline PDFs. Please download the PDF to view it: <a href="http://atreya.istenitc.org/guidelines/FRAMES.pdf">Download PDF</a></p>
-        </object>
+
+        <object data="http://atreya.istenitc.org/guidelines/FRAMES.pdf"  width="600" height="500">
+            <iframe src="http://docs.google.com/gview?url=http://atreya.istenitc.org/guidelines/FRAMES.pdf&embedded=true" style="width:600px; height:500px;" frameborder="0"></iframe>
+            <p>If this browser does not support PDFs. Please download the PDF to view it: <a href="http://atreya.istenitc.org/guidelines/FRAMES.pdf">View the PDF</a>.</p>
+            </embed></object>
     </div>
 
 

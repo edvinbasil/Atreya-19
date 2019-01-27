@@ -607,15 +607,30 @@ section {
 .home_link {
     margin-top: 21px
 }
+.brochure_link {
+    margin-top: 21px;
 
+}
 .home_link a {
-    position: relative;
     padding-left: 17px;
     padding-right: 12px;
     font-size: 24px;
-    color: #FFF
+    color: #FFF;
 }
+.brochure_link a {
+    position: relative;
+    padding-left: 17px;
+    padding-right: 12px;
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    border: solid #000 2px;
 
+}
+.brochure_link a:hover{
+    background: #000;
+    color: #fff;
+}
 .home_link a::before {
     position: absolute;
     left: 0;
@@ -1018,9 +1033,10 @@ section {
     color: black;
 }
 .logo_box{
-    padding-top: 150px;
+    padding-top: 120px;
     padding-right: 50px;
     padding-left: 50px;
+    padding-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
