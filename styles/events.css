@@ -617,6 +617,7 @@ section
     background-color: rgba(0,0,0,.2);
 }
 .schedule{
+    margin-bottom: 10px;
     transition: background-color 0.3s ease-out, color 0.5s ease-out;
     padding: 10px 20px;
     background-color: #fff;
