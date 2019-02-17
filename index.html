@@ -320,25 +320,7 @@
 	</div>
 
 	<div class="countdown">
-		<div id="count_title">Atreya begins in...</div>
-		<div class="countdown_container" id="countdown_atreya">
-			<div class="count_dial">
-				<span class="timeel days">00</span>
-				<span class="timeel timeRefDays">Days</span>
-			</div><div class="count_dot"></div>
-			<div class="count_dial">
-				<span class="timeel hours">00</span>
-				<span class="timeel timeRefHours">Hours</span>
-			</div><div class="count_dot"></div>
-			<div class="count_dial">
-				<span class="timeel minutes">00</span>
-				<span class="timeel timeRefMinutes">Minutes</span>
-			</div><div class="count_dot"></div>
-			<div class="count_dial">
-				<span class="timeel seconds">00</span>
-				<span class="timeel timeRefSeconds">Seconds</span>
-			</div>
-		</div>
+		<div id="count_title">Atrey has ended</div>
 
 	</div>
 
@@ -417,6 +399,12 @@
 </div>
 
 
+<div id="end_msg">
+	<div class="end_body">
+		<h4>Atreya has ended</h4>
+		<p>Thanks for being a part of it :)</p>
+	</div>
+</div>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
@@ -434,7 +422,16 @@
 <script src="js/custom.js"></script>
 <script src="js/popup.js"></script>
 <script>
+	$(document).ready(function () {
+
+        $('#end_msg').lightbox_me({
+            centered: true,
+            onClose: function() {$('body').css('overflow','visible');},
+            overlayCSS: {background: 'black', opacity: .9}
+        });
+    })
     $(window).on("load", function() {
+
         $('#preloader').fadeOut();
         $('.home_title').append("<img style='height: 300px' src='images/main_logo.svg'>");
         function hom_sub_fade() {

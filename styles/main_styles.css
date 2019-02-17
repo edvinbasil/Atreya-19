@@ -882,7 +882,10 @@ section {
 }
 
 
-
+.end_body {
+    text-align: center;
+    padding: 5px 10px;
+}
 
 .footer {
     background: #000
